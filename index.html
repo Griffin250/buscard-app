@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Ticket</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="ticket-container">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="time">15:36</div>
+      <h2>Single Ticket</h2>
+    </div>
+
+    <!-- Ticket Status -->
+    <div class="ticket-status">
+      <div class="status-header">
+        <button class="status-text">Valid</button>
+        <!----<span class="ticket-time">15:36</span>------->
+      </div>
+      <div class="expiry">
+        <h3>EXPIRES IN:</h3>
+        <div id="countdown">
+          <div class="time-box">
+            <span id="hours">01</span>
+            <small>hour</small>
+          </div>
+          <div class="time-box">
+            <span id="minutes">24</span>
+            <small>min</small>
+          </div>
+          <div class="time-box">
+            <span id="seconds">14</span>
+            <small>sec</small>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-info">
+        <div><strong>Traveler</strong><br>1 Youth</div>
+        <div><strong>Valid in</strong><br>Arendal</div>
+      </div>
+    </div>
+
+    <!-- Ticket Details -->
+    <div class="ticket-details">
+      <button onclick="toggleDetails()" id="details-toggle">HIDE DETAILS <img src="images/chevron-down_.png"> </button>
+      <div id="details" class="details">
+        <p><strong>Single ticket</strong></p>
+        <p>Expires Wednesday 13. November 2024</p>
+        <p>Purchased 13. November 15:30</p>
+        <p>Price kr 36.00 of which VAT kr 1.93</p>
+        <p>Paid with Vipps</p>
+        <p>Ticket ID: 40 94 18 59 15</p>
+        <button class="receipt-button">Receipt</button>
+      </div>
+    </div>
+
+    <!-- Inspection Button -->
+    <button class="inspection-button"> <img src="images/qr-images.png" alt="">Inspection</button>
+
+    <!-- Footer Navigation -->
+    <div class="nav-bar">
+        
+      <button class="nav-item active">Tickets</button>
+      <button class="nav-item">Find Journey</button>
+      <button class="nav-item">Scooter</button>
+      <button class="nav-item">Departures</button>
+      <button class="nav-item">More</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
